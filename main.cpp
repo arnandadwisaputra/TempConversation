@@ -1,29 +1,18 @@
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 using namespace std;
 
 int main() {
-	cout << "Hitung Sisi Miring Segitiga Siku-Siku\n\n";
+	cout << "Konversi Suhu\n\n" << endl;
 
-	cout << 
-			"   |" << setw(3) << "\\ \n" <<
-			"   |" << setw(4) << "\\ \n" <<
-			"   |" << setw(5) << "\\ \n" <<
-			" a |" << setw(6) << "\\  c \n" <<
-			"   |" << setw(7) << "\\ \n" <<
-			"   |" << setw(8) << "\\ \n" <<
-			"   |" << setw(9) << "\\ \n" << 
-		    "   ---------" <<
-		endl;
+	cout << "input celcius:";
+	double c;
+	cin >> c;
 
-	cout << "masukkan sisi a:";
-	double a;
-	cin >> a;
-	cout << "masukkan sisi b:";
-	double b;
-	cin >> b;
+	double r = (c * 4 / 5);
+	double f = (c * 9 / 5)  + 32;
 
-	double c = sqrt(pow(a, 2) + pow(b, 2));
-	cout << "sisi miring c:" << c << endl;
+	cout << "\nKonversi:" << endl;
+	cout << " " << r << char(248) << "R" << endl;
+	cout << " " << f << char(248) << "F" << endl;
+
 }
